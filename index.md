@@ -1,5 +1,5 @@
- ---
- layout: default
- title: Introduction to Docker
- nav_order: 1
- ---
+---
+layout: default
+title: Intro to Docker
+nav_order: 1
+---
