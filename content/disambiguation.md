@@ -16,7 +16,7 @@ One of the biggest barriers I found when starting with Docker containers was det
 
 ### dockerd Daemon
 
-[dockerd](https://docs.docker.com/engine/reference/commandline/dockerd/) is the name for the persistent process, or *daemon*, behind the Docker Engine.
+[dockerd](https://docs.docker.com/engine/reference/commandline/dockerd/) is the name for the persistent process, or *daemon*, behind the Docker Engine. This is also sometimes referred to as the Docker client.
 
 ### Docker CLI
 
@@ -48,7 +48,7 @@ Run docker-compose up and Compose starts and runs your entire app."
 
 ## Docker Hub
 
-[Docker Hub](https://www.docker.com/products/docker-hub) is a repository platform for exploring and sharing container images, kind of like [Github](https://www.github.com) for Docker.
+[Docker Hub](https://www.docker.com/products/docker-hub) is the most prominent of available registries for exploring and sharing container images, kind of like [Github](https://www.github.com) for Docker.
 
 ## Docker Swarm
 

@@ -21,4 +21,9 @@ nav_order: 3
 
 # Next steps to Docker literacy
 
+This 30-minute [Docker for Beginners](https://training.play-with-docker.com/beginner-linux/) lab takes place entirely within the browser, and assumes no special knowledge of Docker. It's a great opportunity to test your command line skills in advance of diving deeper.
+
 Once you've got Docker installed on your operating system, [this Docker Labs beginner's tutorial](https://github.com/docker/labs/blob/master/beginner/readme.md) is a great way to dive deeper into hands-on Docker mastery.
+
+TODO type up rest of notes
+{: .warn}

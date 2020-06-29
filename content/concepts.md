@@ -17,9 +17,14 @@ Now, instead of learning all the low-level minutia of customizing containers in 
 # Virtualization concepts
 This section will introduce a few concepts and terms for you to be aware of before we dive into the specifics of Docker.
 
+Cover [namespaces](https://docs.docker.com/get-started/overview/#namespaces) and [control groups](https://docs.docker.com/get-started/overview/#control-groups)
+{: .warn}
+
+
 ### Virtualization in computing
 
 TODO type from written notes
+{: .warn}
 
 ### Virtual machines (VMs)
 
@@ -27,6 +32,14 @@ Virtual Machines (VMs) virtualize the entire "tech stack" of a computer, down to
 
 ### Containers
 
-TODO type from written notes
+Whereas a VM gives us virtualization all the way down to the kernel and hardware layers, a container is much more lightweight in comparison, sitting on top of the host computer's kernel and merely virtualizing from the level of binaries and libraries upward. 
 
-TODO upload diagrams I made
+![Containers versus VMs](figures/containersvsvm.png)
+
+TODO type rest from written notes
+{: .warn}
+
+#### Docker objects
+
+Discuss the difference between **images**, **containers**, and **services** as per [their docs breakdown](https://docs.docker.com/get-started/overview/#docker-objects).
+{: .warn}
