@@ -50,11 +50,15 @@ Run docker-compose up and Compose starts and runs your entire app."
 
 [Docker Hub](https://www.docker.com/products/docker-hub) is a repository platform for exploring and sharing container images, kind of like [Github](https://www.github.com) for Docker.
 
+## Docker Swarm
+
+Rather than a tool or platform, [Docker Swarm, or swarm mode](https://docs.docker.com/engine/swarm/), is exactly what it sounds like: central management of a cluster of Docker Engines controlled through Docker CLI.
+
 # Putting It All Together
 
 If you're still confused about the different moving parts when interacting with Docker, their documentation has a [great diagram of the overall architecture](https://docs.docker.com/get-started/overview/#docker-architecture).
 
-# Docker Platform Beyond Docker Variants
+## Docker Platform Beyond Docker Variants
 
 The Docker platform also contains other crucial tooling, not all of which has the name "Docker" in it. One example is [Kubernetes](https://www.docker.com/products/kubernetes), an "orchestration platform" for coordinating shared infrastructure and operations around containers. 
 

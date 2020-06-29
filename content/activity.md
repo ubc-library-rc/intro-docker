@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dev ops competencies for academics
+title: Learning activity
 permalink: /activity/
 parent: Part 2 - Technical Overview
 nav_order: 3

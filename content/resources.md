@@ -21,4 +21,4 @@ nav_order: 3
 
 # Next steps to Docker literacy
 
-TODO type from written notes
+Once you've got Docker installed on your operating system, [this Docker Labs beginner's tutorial](https://github.com/docker/labs/blob/master/beginner/readme.md) is a great way to dive deeper into hands-on Docker mastery.
