@@ -1,9 +1,12 @@
 ---
-layout: default
-title: Initial Resources
-nav_order: 2
+layout: page
+title: Resources and next steps
+permalink: /resources/
+parent: Part 2 - Technical Overview
+nav_order: 3
 ---
-# Sharing the Initial Resources We Can Build This From
+
+# Resources 
 
 [Docker Basics](https://countable-ops-manual.readthedocs.io/devops/DEVOPS.html#docker-basics)
 
@@ -14,3 +17,8 @@ nav_order: 2
 [Docker for Reproducible Computing](https://reproducible-analysis-workshop.readthedocs.io/en/latest/8.Intro-Docker.html)
 
 [Start from Novice Mental Model](https://carpentries.github.io/instructor-training/02-practice-learning/index.html)
+
+
+# Next steps to Docker literacy
+
+TODO type from written notes
