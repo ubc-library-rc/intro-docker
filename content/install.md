@@ -14,7 +14,7 @@ As Docker's design builds upon, and extends, the logic of Linux computing struct
 
 The Docker documentation guide gives [instructions for installation on multiple Linux distros](https://docs.docker.com/engine/install/#server), including [CentOS](https://docs.docker.com/engine/install/centos/), [Debian](https://docs.docker.com/engine/install/debian/), [Fedora](https://docs.docker.com/engine/install/fedora/), and [Ubuntu](https://docs.docker.com/engine/install/ubuntu/). *Note that each installation page lists specific requirements or constraints for that distro*.
 
-If you're an experienced Linux user and/or particularly brave, there are also instructions to [Install Docker Engine from binaries](https://docs.docker.com/engine/install/binaries/).
+If you're an experienced Linux user on a unique distro not included above, there are also instructions to [Install Docker Engine from binaries](https://docs.docker.com/engine/install/binaries/).
 
 ![Docker whale made with lego](figures/docker_lego.jpg)
 Docker lego whale retrieved from [kyohei ito on Flickr](https://www.flickr.com/photos/134416355@N07/31518965950), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).

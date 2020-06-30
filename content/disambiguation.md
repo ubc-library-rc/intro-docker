@@ -8,23 +8,27 @@ nav_order: 2
 
 # So many 'Dockers', so little time
 
-One of the biggest barriers I found when starting with Docker containers was determining which tooling I needed from the expansive landscape of product offerings. Hopefully the following disambiguation will help us minimize that confusion!
+One of the first barriers in learning Docker is identifying all the elements of its ecosystem, many of which share the same core name. This walkthrough aims to disambiguate those pieces of the puzzle.
 
 ## Docker Engine
 
-[Docker Engine](https://www.docker.com/products/container-runtime) can be thought of, appropriately enough, as the "engine" upon which Docker images and their resulting containers are run. Built on [containerd](https://containerd.io/) and robustly interoperable across systems, this is the "main event" of Docker, with three main subcomponents:
+[Docker Engine](https://www.docker.com/products/container-runtime) can be thought of, appropriately enough, as the "engine" upon which Docker images and their resulting containers are run. 
 
-### dockerd Daemon
+Built on [containerd](https://containerd.io/) and robustly interoperable across systems, this is the "main event" of Docker, with three main subcomponents:
+
+#### dockerd Daemon
 
 [dockerd](https://docs.docker.com/engine/reference/commandline/dockerd/) is the name for the persistent process, or *daemon*, behind the Docker Engine. This is also sometimes referred to as the Docker client.
 
-### Docker CLI
+#### Docker CLI
 
 [Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/) is the command line interface that you run in a terminal or shell with the simple command 'docker'. Following Linux norms, once you have Docker CLI installed you can enter 'docker help' to view its [man page](https://en.wikipedia.org/wiki/Man_page), or list of available commands and options.
 
-### Docker API
+#### Docker API
 
-[Docker Engine API](https://docs.docker.com/engine/api/) is a Representational State Transfer Application Programming Interface, or a [REST API](https://ubc-library-rc.github.io/intro-api/content/01_what-is-an-api.html#restful-apis). This makes it easier for programmers to build applications which interface with Docker Engine.
+[Docker Engine API](https://docs.docker.com/engine/api/) is a Representational State Transfer Application Programming Interface, or a [REST API](https://ubc-library-rc.github.io/intro-api/content/01_what-is-an-api.html#restful-apis). 
+
+This makes it easier for programmers to build applications which interface with Docker Engine. Learn more about [Web APIs here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction).
 
 ## Docker Desktop
 
@@ -36,15 +40,7 @@ One of the biggest barriers I found when starting with Docker containers was det
 
 ## Docker-Compose
 
-Docker-Compose is the most frequently used tool across environments for more complex interaction with Docker Apps. From the [Compose documentation](https://docs.docker.com/compose/) directly:
-
-"Using Compose is basically a three-step process:
-
-Define your app’s environment with a Dockerfile so it can be reproduced anywhere.
-
-Define the services that make up your app in docker-compose.yml so they can be run together in an isolated environment.
-
-Run docker-compose up and Compose starts and runs your entire app."
+Docker-Compose is the most frequently used tool across environments for more complex interaction with Docker Apps. Check out the [Compose documentation](https://docs.docker.com/compose/) for more.
 
 ## Docker Hub
 
@@ -54,12 +50,14 @@ Run docker-compose up and Compose starts and runs your entire app."
 
 Rather than a tool or platform, [Docker Swarm, or swarm mode](https://docs.docker.com/engine/swarm/), is exactly what it sounds like: central management of a cluster of Docker Engines controlled through Docker CLI.
 
-# Putting It All Together
-
-If you're still confused about the different moving parts when interacting with Docker, their documentation has a [great diagram of the overall architecture](https://docs.docker.com/get-started/overview/#docker-architecture).
-
 ## Docker Platform Beyond Docker Variants
 
 The Docker platform also contains other crucial tooling, not all of which has the name "Docker" in it. One example is [Kubernetes](https://www.docker.com/products/kubernetes), an "orchestration platform" for coordinating shared infrastructure and operations around containers. 
 
-Similarly, [Notary](https://docs.docker.com/notary/getting_started/) is a Docker platform tool which enables users to sign collections of content, verify their integrity, and confirm their origin. Finally, [Docker Credential Helpers](https://github.com/docker/docker-credential-helpers/) is a suite of smaller programs to help keep login credentials safe.
+Similarly, [Notary](https://docs.docker.com/notary/getting_started/) is a Docker platform tool which enables users to sign collections of content, verify their integrity, and confirm their origin. 
+
+Finally, [Docker Credential Helpers](https://github.com/docker/docker-credential-helpers/) is a suite of smaller programs to help keep login credentials safe.
+
+# Putting It All Together
+
+If you're still confused about the different moving parts when interacting with Docker, their documentation has a [great diagram of the overall architecture](https://docs.docker.com/get-started/overview/#docker-architecture).
