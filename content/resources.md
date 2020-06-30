@@ -12,7 +12,6 @@ Below you'll find broad categories anchoring further learning resources which ar
 
 There are also [curated learning resources](https://docs.docker.com/get-started/resources/) within the Docker docs themselves, including tutorials, books, and online courses.
 
-
 ## General Docker Resources
 
 ### Videos
@@ -25,11 +24,15 @@ This 30-minute [Docker for Beginners](https://training.play-with-docker.com/begi
 
 Once you've got Docker installed on your operating system, [this Docker Labs beginner's tutorial](https://github.com/docker/labs/blob/master/beginner/readme.md) is a great way to dive deeper into hands-on Docker mastery.
 
-### Readings
+### Documentation
 
 ![Cover of Julia Evans' zine on Linux containers](figures/b0rkcover.png)
 If you'd like to get a better overview on containers in general, check out the ["How Containers Work" zine](https://wizardzines.com/zines/containers/) produced by the awesome [Julia Evans, aka b0rk](https://jvns.ca/)
 <br/>
+
+Additionally, [this click-through presentation on Docker](https://oer.gitlab.io/oer-on-oer-infrastructure/Docker.html#/slide-org562bf2f) is targeted to those with an interest in Open Educational Resources (OER).
+
+Finally, [this blog post](https://thekrishna.in/blogs/blog/fav-docker-images/) walks through 10 concrete use cases for Docker, linking out to relevant apps and images.
 
 ## Reproducible Computing in Academia
 
@@ -51,10 +54,11 @@ If you'd like to get a better overview on containers in general, check out the [
 
 [Check out this great workshop on Docker for Reproducible Computing](https://reproducible-analysis-workshop.readthedocs.io/en/latest/8.Intro-Docker.html).
 
-[Presentation and tutorial on achieving data persistence in Docker environments](https://github.com/stephlocke/datadockerdisconbobulating) - a little outdated, but a great match for reproducible computing use cases.
-<br/>
+This workshop [uses concrete research data and methods from a study on MRSA](https://nbis-reproducible-research.readthedocs.io/en/latest/docker/) to demonstrate Docker for reproducible computing.
 
-### Readings
+[Presentation and tutorial on achieving data persistence in Docker environments](https://github.com/stephlocke/datadockerdisconbobulating) - a little outdated, but a great match for reproducible computing use cases.
+
+### Documentation
 
 [This article gives an overview of academic uses of Docker for reproducible research](https://dl.acm.org/doi/10.1145/2723872.2723882)
 
@@ -63,6 +67,7 @@ If you'd like to get a better overview on containers in general, check out the [
 [This blog post covers a sociologist's integration of Docker into his research workflow](https://research-it.berkeley.edu/blog/17/07/26/sociologist-uses-docker-switch-workflows-ease)
 
 [This article investigates the utility of Singularity containers for computing mobility](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177459)
+<br/>
 
 ## Docker Security
 
@@ -96,3 +101,9 @@ Keep in mind that Docker’s ecosystem is not immune to security concerns; [smal
 ### Learning Activities
 
 [This Docker tutorial walkthrough](https://countable-ops-manual.readthedocs.io/devops/DOCKER.html) presents the basics of Docker as relevant to a devops role in software deployment.
+
+[Another tutorial walkthrough](https://docker-curriculum.com/), which requires some comfort with command line, can bring you even deeper into mastering Docker for more software-focused use cases.
+
+### Documentation
+
+Once you've got the hang of the basic Docker workflow, [this documentation](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) gives great guidance on best practices for writing your own Dockerfiles.

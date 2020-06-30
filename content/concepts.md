@@ -15,6 +15,16 @@ While Docker built upon the pre-established Linux concepts surrounding container
 Now, instead of learning all the low-level minutia of customizing containers in Linux, developers just needed to get Docker running, and they could create Docker containers from a number of different interfaces.
 <br/>
 
+## Computing concepts
+
+* [application](https://en.wikipedia.org/wiki/Application_software) - the word "app" is widely used to mean many things, but overall it is any program or group of programs targeted towards computer end users
+
+* [process](https://en.wikipedia.org/wiki/Process_(computing)) - in computing, a process is the term for the current instance of a running computer program
+
+* [repository](https://techterms.com/definition/repository#:~:text=Terms%20%3A%20Repository%20Definition-,Repository,a%20central%20file%20storage%20location.&text=This%20may%20include%20multiple%20source,new%20versions%20of%20the%20program.) - a repository is a central location for file storage; the 'central' element is crucial for maintaining version control
+
+* [version control](https://en.wikipedia.org/wiki/Version_control) - a component of technical collaboration in which we rigorously maintain a 'primary/live version' of a shared repository in order to make sure contributors' changes don't conflict
+
 ## Virtualization concepts
 
 This section will introduce a few concepts and terms for you to be aware of before we dive into the specifics of Docker. 

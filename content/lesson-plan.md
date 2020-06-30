@@ -23,10 +23,10 @@ This is your session. If you have a question or feel we are going too fast, plea
 | 0:05 | [Intros and setting the pace](participating-online.md)
 | [Part 1](part-01.md)
 | 0:10 | [Origin and high level concepts](concepts.md)
-| 0:15 | [Disambiguating terms](disambiguation.md)
-| 0:20 | [Main use cases](uses.md)
+| 0:20 | [Disambiguating terms](disambiguation.md)
+| 0:25 | [Main use cases](uses.md)
 | [Part 2](part-02.md)
-| 0:30 | [Paths to installation and troubleshooting](install.md)
+| 0:35 | [Paths to installation and troubleshooting](install.md)
 | 0:50 | [Hands-on learning activities](activity.md)
 | 1:20 | [Resources and next steps](resources.md)
 
