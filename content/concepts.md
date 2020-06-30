@@ -33,6 +33,9 @@ The real computer which the VM is running on is often called the 'host,' and the
 
 Whereas a VM gives us virtualization all the way down to the kernel and hardware layers, a [container](https://en.wikipedia.org/wiki/OS-level_virtualization) is much more lightweight in comparison. 
 
+![@b0rk on containers](figures/b0rkcontainer.png)
+Retrieved from the ["How Containers Work" zine](https://wizardzines.com/zines/containers/) produced by the awesome [Julia Evans, aka b0rk](https://jvns.ca/)
+
 Often called "OS-level virtualization," containers sit on top of the host computer's kernel and merely virtualize from the level of binaries and libraries up to the user interface. 
 
 ### Comparing VMs and Containers

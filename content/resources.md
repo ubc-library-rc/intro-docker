@@ -24,9 +24,14 @@ There are also [curated learning resources](https://docs.docker.com/get-started/
 This 30-minute [Docker for Beginners](https://training.play-with-docker.com/beginner-linux/) lab takes place entirely within the browser, and assumes no special knowledge of Docker. It's a great opportunity to test your command line skills in advance of diving deeper.
 
 Once you've got Docker installed on your operating system, [this Docker Labs beginner's tutorial](https://github.com/docker/labs/blob/master/beginner/readme.md) is a great way to dive deeper into hands-on Docker mastery.
+
+### Readings
+
+![Cover of Julia Evans' zine on Linux containers](figures/b0rkcover.png)
+If you'd like to get a better overview on containers in general, check out the ["How Containers Work" zine](https://wizardzines.com/zines/containers/) produced by the awesome [Julia Evans, aka b0rk](https://jvns.ca/)
 <br/>
 
-## Reproducible Computing
+## Reproducible Computing in Academia
 
 ### Videos
 
