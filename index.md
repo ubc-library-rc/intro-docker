@@ -8,7 +8,7 @@ nav_order: 1
 
 This workshop is meant to introduce you to the set of virtualization tools referred to as [Docker](https://www.docker.com/), which allow you to use, create, and share container images. 
 
-![Docker dark background icon](../content/figures/docker_boyi_wu.jpg)
+![Docker dark background icon](content\figures\docker_boyi_wu.jpg)
 Retrieved from [Bo-Yi Wu on Flicker](https://www.flickr.com/photos/appleboy/25660808075), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 
 [Containers](https://www.cio.com/article/2924995/what-are-containers-and-why-do-you-need-them.html) create small reproducible computing workspaces on your computer, to which you can ascribe specific libraries and constraints to replicate specific environments.
