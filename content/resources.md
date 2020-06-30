@@ -53,6 +53,12 @@ Once you've got Docker installed on your operating system, [this Docker Labs beg
 
 [This article gives an overview of academic uses of Docker for reproducible research](https://dl.acm.org/doi/10.1145/2723872.2723882)
 
+[This article proposes a practical implementation for computing reproducibility in the life sciences](https://europepmc.org/article/med/29953862)
+
+[This blog post covers a sociologist's integration of Docker into his research workflow](https://research-it.berkeley.edu/blog/17/07/26/sociologist-uses-docker-switch-workflows-ease)
+
+[This article investigates the utility of Singularity containers for computing mobility](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177459)
+
 ## Docker Security
 
 #### Videos
