@@ -26,8 +26,8 @@ This is your session. If you have a question or feel we are going too fast, plea
 | 0:15 | [Disambiguating terms](disambiguation.md)
 | 0:20 | [Main use cases](uses.md)
 | [Part 2](part-02.md)
-| 0:25 | [Paths to installation and troubleshooting](install.md)
-| 0:40 | [Hands-on learning activities](activity.md)
+| 0:30 | [Paths to installation and troubleshooting](install.md)
+| 0:50 | [Hands-on learning activities](activity.md)
 | 1:20 | [Resources and next steps](resources.md)
 
 _Actual schedule may vary depending on group needs_

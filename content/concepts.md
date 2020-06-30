@@ -19,21 +19,23 @@ Now, instead of learning all the low-level minutia of customizing containers in 
 
 This section will introduce a few concepts and terms for you to be aware of before we dive into the specifics of Docker. 
 
-[Virtualization](https://en.wikipedia.org/wiki/Virtualization) itself refers to anytime you create a purely virtual version of something.
+[Virtualization](https://en.wikipedia.org/wiki/Virtualization) refers to anytime you create a purely virtual version of something.
 
-#### Virtual machines (VMs)
+### Virtual machines (VMs)
 
-[Virtual Machines (VMs)](https://en.wikipedia.org/wiki/Virtual_machine) are purely virtual instances of computers which run *on* another, **real**, computer. Virtual machines were first developed in the 1960s, to enable "time sharing" of computing hardware resources for multiple simultaneous users.
+[Virtual Machines (VMs)](https://en.wikipedia.org/wiki/Virtual_machine) are purely virtual instances of computers which run *on* another, **real**, computer. 
+
+Virtual machines were first developed in the 1960s, to enable "time sharing" of computing hardware resources for multiple simultaneous users.
 
 The real computer which the VM is running on is often called the 'host,' and the software running on it which creates virtual machines is called a [hypervisor](https://en.wikipedia.org/wiki/Hypervisor).
 
-#### Containers
+### Containers
 
 Whereas a VM gives us virtualization all the way down to the kernel and hardware layers, a [container](https://en.wikipedia.org/wiki/OS-level_virtualization) is much more lightweight in comparison. 
 
 Often called "OS-level virtualization," containers sit on top of the host computer's kernel and merely virtualize from the level of binaries and libraries up to the user interface. 
 
-#### Comparing VMs and Containers
+### Comparing VMs and Containers
 
 Virtual machines virtualize the entire "tech stack" of a computer down to the hardware. They're a lot more resource-intensive than containers but can be necessary for certain computing tasks. 
 
@@ -47,7 +49,7 @@ On the negative side, containers are slightly **less fault tolerant** than virtu
 ![Containers versus VMs part 2](figures/wikicommonsVMcontainer.png)
 Another way to model containers vs. VMs, retrieved from [Natlibfi-arlehiko on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Containers.png), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-#### Docker objects
+### Docker objects
 
 A Docker **container** is an instance of a Docker **image**. You can run multiple containers, all as instances of the same image. 
 

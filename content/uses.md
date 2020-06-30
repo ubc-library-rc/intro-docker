@@ -8,27 +8,19 @@ nav_order: 3
 
 # What is Docker useful for?
 
-TODO type from written notes
-{: .warn}
+Docker has a number of useful qualities which apply across all industries and applications:
 
-
-### For developer operations
-
-TODO type from written notes
-{: .warn}
-
-* "things just work" (pull from Clark's writing)
-
-### For programmers
-
-TODO type from written notes
-{: .warn}
-
-* No more struggling for dependencies
+* **"things just work"** - once you've covered the initial learning curve for virtual containers, the process of interacting with them stays consistent
+* **no more struggling for dependencies** - you can include all libraries, packages, and dependencies that a piece of software or a dataset needs in an accompanying Docker image, so it will work 'right out of the box' for its recipient
 
 ### For academics
 
-TODO type from written notes
-{: .warn}
-
 * Reproducible computing
+
+### For developer operations
+
+
+
+### For programmers
+
+

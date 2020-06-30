@@ -15,11 +15,11 @@ There are also [curated learning resources](https://docs.docker.com/get-started/
 
 ## General Docker Resources
 
-#### Videos
+### Videos
 
 [Michele Finelli’s talk on the history of containers and VMS](https://vimeo.com/166626311) - *25 minute overview shedding more light on the history leading to present day Docker*
 
-#### Learning Activities
+### Learning Activities
 
 This 30-minute [Docker for Beginners](https://training.play-with-docker.com/beginner-linux/) lab takes place entirely within the browser, and assumes no special knowledge of Docker. It's a great opportunity to test your command line skills in advance of diving deeper.
 
@@ -28,7 +28,7 @@ Once you've got Docker installed on your operating system, [this Docker Labs beg
 
 ## Reproducible Computing
 
-#### Videos
+### Videos
 
 [This ‘setting the scene’ conference talk](https://vimeo.com/366209343) - *26 min pragmatically covering the various tools, components, and best practices for reproducible research workflows*
 
@@ -42,14 +42,14 @@ Once you've got Docker installed on your operating system, [this Docker Labs beg
 
 [Building reproducible workflows for earth sciences: Scaling reproducible research with Jupyter](https://vimeo.com/366447788) - *36 min walkthrough from Project Jupyter’s Carol Willing, making recommendations for a research reproducibility pipeline*
 
-#### Learning Activities
+### Learning Activities
 
 [Check out this great workshop on Docker for Reproducible Computing](https://reproducible-analysis-workshop.readthedocs.io/en/latest/8.Intro-Docker.html).
 
 [Presentation and tutorial on achieving data persistence in Docker environments](https://github.com/stephlocke/datadockerdisconbobulating) - a little outdated, but a great match for reproducible computing use cases.
 <br/>
 
-#### Readings
+### Readings
 
 [This article gives an overview of academic uses of Docker for reproducible research](https://dl.acm.org/doi/10.1145/2723872.2723882)
 
@@ -61,13 +61,13 @@ Once you've got Docker installed on your operating system, [this Docker Labs beg
 
 ## Docker Security
 
-#### Videos
+### Videos
 
 [Technical lecture on security for Docker](https://vimeo.com/249060236) - *68 min covering security best practices, specific tools, and a demo*
 
 [Network view of Docker: Security webinar](https://vimeo.com/191735566) - *40 min overview largely focused on software deployment use cases*
 
-#### Documentation
+### Documentation
 
 [Docker’s own documentation on best security practices](https://docs.docker.com/engine/security/security/) is a great start for understanding security concerns.
 
@@ -80,7 +80,7 @@ Keep in mind that Docker’s ecosystem is not immune to security concerns; [smal
 
 ## Computer Science and Software Development
 
-#### Videos
+### Videos
 
 [Demystifying Docker and Docker-Compose](https://vimeo.com/253796471) - *25 min deep dive, containerizing one application as an example*.
 
@@ -88,6 +88,6 @@ Keep in mind that Docker’s ecosystem is not immune to security concerns; [smal
 
 [Spinning up a PostgreSQL database using Docker](https://vimeo.com/168685388) - *12 min walkthrough for a common software deployment use case*
 
-#### Learning Activities
+### Learning Activities
 
 [This Docker tutorial walkthrough](https://countable-ops-manual.readthedocs.io/devops/DOCKER.html) presents the basics of Docker as relevant to a devops role in software deployment.

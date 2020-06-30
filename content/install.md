@@ -8,7 +8,7 @@ nav_order: 1
 
 # Paths to installing Docker
 
-### Linux 
+## Linux 
 
 As Docker's design builds upon, and extends, the logic of Linux computing structures, Docker tooling is relatively well-integrated with mainstream Linux distributions.
 
@@ -19,7 +19,7 @@ If you're an experienced Linux user on a unique distro not included above, there
 ![Docker whale made with lego](figures/docker_lego.jpg)
 Docker lego whale retrieved from [kyohei ito on Flickr](https://www.flickr.com/photos/134416355@N07/31518965950), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 
-### Windows and Mac
+## Windows and Mac
 
 Beyond exploring [Docker Hub's Playground](https://labs.play-with-docker.com/) in the browser environment, the next easiest step for Mac and Windows user is installing **Docker Desktop** for your operating system. 
 
