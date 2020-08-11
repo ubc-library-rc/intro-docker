@@ -10,6 +10,8 @@ nav_order: 2
 
 One of the first barriers in learning Docker is identifying all the elements of its ecosystem, many of which share the same core name. This walkthrough aims to disambiguate those pieces of the puzzle.
 
+![What's Docker meme](/figures/whatsdocker.png)
+
 ## Docker Engine
 
 [Docker Engine](https://www.docker.com/products/container-runtime) can be thought of, appropriately enough, as the "engine" upon which Docker images and their resulting containers are run. 

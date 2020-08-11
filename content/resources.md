@@ -71,6 +71,8 @@ This workshop [uses concrete research data and methods from a study on MRSA](htt
 
 ## Docker Security
 
+![Gotta have security](/figures/dockerpanik.png)
+
 ### Videos
 
 [Technical lecture on security for Docker](https://vimeo.com/249060236) - *68 min covering security best practices, specific tools, and a demo*

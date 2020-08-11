@@ -31,6 +31,8 @@ This section will introduce a few concepts and terms for you to be aware of befo
 
 [Virtualization](https://en.wikipedia.org/wiki/Virtualization) refers to anytime you create a purely virtual version of something.
 
+![Virtualization meme](/figures/VIRTUALIZATION.png)
+
 ### Virtual machines (VMs)
 
 [Virtual Machines (VMs)](https://en.wikipedia.org/wiki/Virtual_machine) are purely virtual instances of computers which run *on* another, **real**, computer. 

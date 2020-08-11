@@ -6,34 +6,32 @@ parent: Part 2 - Technical Overview
 nav_order: 3
 ---
 
-# Hands-on learning activities
+# Hands-on Learning Activities
 
 Even though mastering Docker can help you solve the many environment and dependency issues you'll come across in computing, getting Docker itself running on any given system can be quite a challenging task initially!
 
-In the interest of time, we'll be exploring a few different browser-based implementations of Docker containers instead of doing a live install, but we welcome you to reach out for a follow-up appointment if you need one-on-one troubleshooting.
+First, we're going to check in on everyone's install status, to see how many folks will be "coding along" with us today.
 
-### Jupyter and Binder
+!["I have no idea what I'm doing" dog](/figures/dockerfile_activity.png)
 
-[Project Jupyter](https://jupyter.org) produces open source software, and is best known for [Jupyter Notebooks](https://jupyter.org/try) which provide an interactive and reusable playground for documentation and code.
+### Dockerfiles Lifecycle
 
-Again, rather than installing everything locally, we'll be utilizing in-browser instances of Jupyter [hosted on Binder](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/running.html#using-binder), which allows us to explore a pre-made instance of [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io).
+First we want to explore a bit more about the lifecycle of a Dockerfile.
+
+In almost all use cases, you will not need to write a Dockerfile yourself, but can instead select one from a trusted Docker Registry.
+
+The main registry used by most people is [Docker Hub](http://hub.docker.com), which provides a Github-like management platform for sharing Docker images. Additionally, Docker Hub curates "Official Images" for many popular programs and use cases.
+
+Let's navigate together to the [Official Jekyll Docker Image](http://hub.docker.com/r/jekyll/jekyll/tags) to look into how these image's lifecycles are maintained, and how *tags* can specifically help us choose the best image for any given use case.
 <br/>
 
-### Primary Activity
+### Creating a Dockerfile
 
-Please navigate to [Jupyter Docker Stacks hosted on MyBinder.org](https://mybinder.org/v2/gh/jupyter/docker-stacks/master?filepath=README.ipynb). *It may take up to a few minutes to successfully generate the repository in the link's virtual environment.*
+If we wanted to ensure that a Dockerfile never changed, then pulling one from a public registry would not work for our use case, as they are regularly updated.
 
-Once the environment has loaded, you'll see the Jupyter notebook content, with six executable lines of code demonstrating the sorts of commands and inquiries users can make within the Jupyter Docker Stacks workflow.
+With guest contributor Clark Van Oyen from Countable Web Productions, we'll go through the actual content of the Jekyll Dockerfile and what it executes when running on your computer. 
 
-For each line in the Jupyter Notebook which has "In [#]" to its left, you can click on that line and then ">Run" in the top bar of the browser window in order to execute the code.
+This should provide a better mental model of how containers are constructed from image files, and start you on the path towards writing your own Dockerfiles down the road!
 
-The notebook's content makes reference to [Conda](https://docs.conda.io/en/latest/)- this is a package manager for the Python environment. 
-
-As you explore the output of notebook lines, compare to your previous experiences with hands-on computing. Some of these commands are somewhat universal: **ls**, for example, is frequently invoked to "list files" in a computing context.
-<br/>
-
-### Optional Additional Activity
-
-If you're interested, feel free to explore [Docker Hub's Playground](https://labs.play-with-docker.com/) as well. You need to set up a free Docker Hub ID on their site, which will allow you to access the Hub's repository of shared Docker images in the future as well.
-
-While the Docker Hub playground appears to have a lot more room for functionality than the single use case of the Jupyter Docker Stacks explored above, the link is not always reliable to load and there is not much guidance provided for newcomers to Docker on what to explore within this playground.
+*Thanks to Clark and Countable for guidance on alllll the Docker things, while I constructed this workshop*
+![www.countable.ca](/figures/Countable_Logo.png)

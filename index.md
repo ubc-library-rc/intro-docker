@@ -19,12 +19,12 @@ We'll first discuss broader concepts from the computing virtualization space, di
 
 Then we'll walk through an overview of install pathways for different operating systems and intended uses, touching on some general troubleshooting points and the cognitive competencies cultivated by dev ops tools like these. 
 
-Finally we'll undertake some [browser-based learning activities](/content/activity.md) to explore the nuts and bolts of Docker without getting bogged down in the install process.
+Finally we'll undertake some [group learning activities](/content/activity.md) to explore the nuts and bolts of Docker without getting bogged down in the install process.
 
 #### Prerequisites
 
 - As we settle in to begin the workshop, please review the [Participating Online page](/content/participating-online.md) for the norms which will guide this session.
-- *Optional*: Sign up for a free Docker ID on [DockerHub](https://hub.docker.com/signup/) so you can check out [their "playground"](https://labs.play-with-docker.com/) during the workshop. **The primary learning activity we'll focus on does not require this sign-in.**
+- *Optional*: [Set up Docker on your computer](/content/install.md) so you have a reference point during the group learning activities. **You will be able to follow along without having Docker installed locally.**
 - Some familiarity with computer science concepts will be helpful, but feel free to ask for clarification when you're not familiar with something mentioned in the session.
 
 You may need to walk through the Docker installation process in more than one sitting. This workshop is intended to equip you with the tools to pursue a local install on your own eventually, but we will focus primarily on establishing a higher level understanding of the Docker ecosystem.
