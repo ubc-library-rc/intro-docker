@@ -8,7 +8,7 @@ nav_order: 3
 
 # What is Docker useful for?
 
-Docker lets you create *static* and *reproducible* environments, saved into an image which will run the same way on any computer with Docker set up (agnostic to hardware and operating system).
+Docker lets you create *static* and *reproducible* environments, saved into an image which will run the same way on any computer with Docker set up ([agnostic](https://www.techopedia.com/definition/31685/hardware-agnostic) to hardware and operating system).
 
 Docker has a number of useful qualities which apply across all industries and applications:
 
