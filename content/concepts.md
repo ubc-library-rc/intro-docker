@@ -19,7 +19,11 @@ Now, instead of learning all the low-level minutia of customizing containers in 
 
 * [application](https://en.wikipedia.org/wiki/Application_software) - the word "app" is widely used to mean many things, but overall it is any program or group of programs targeted towards computer end users
 
-* [process](https://en.wikipedia.org/wiki/Process_(computing)) - in computing, a process is the term for the current instance of a running computer program
+* [kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system)) - in a computer's operating system, the kernel is the central program that holds control over all the other programs, up to the level of applications which the user interacts with
+
+* [operating system](https://en.wikipedia.org/wiki/Operating_system) - a computer's operating system is the software which manages the computing hardware and provides a platform for user-facing applications and services
+
+* [process](https://en.wikipedia.org/wiki/Process_(computing)) - this is the term for the current instance of a running computer program
 
 * [repository](https://techterms.com/definition/repository#:~:text=Terms%20%3A%20Repository%20Definition-,Repository,a%20central%20file%20storage%20location.&text=This%20may%20include%20multiple%20source,new%20versions%20of%20the%20program.) - a repository is a central location for file storage; the 'central' element is crucial for maintaining version control
 

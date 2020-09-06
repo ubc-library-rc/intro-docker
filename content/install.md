@@ -30,13 +30,19 @@ Check out the [Docker Quickstart training module](https://docs.docker.com/get-st
 
 ### Windows - Install
 
-[Here](https://docs.docker.com/docker-for-windows/install/) you'll find the installation guide for Windows. 
+[Here](https://docs.docker.com/docker-for-windows/install/) you'll find the installation guide for Windows. You can also navigate to [this direct installation link for Windows Home edition](https://docs.docker.com/docker-for-windows/install-windows-home/). 
 
-Basic installation requirements for Windows include *Windows 10 64-bit: Pro, Enterprise, or Education (Build 16299 or later)*, *64-bit processor with [SLAT](https://en.wikipedia.org/wiki/Second_Level_Address_Translation) functionality*, *[Enabling Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)*, *[Enabling Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=Windows-10-Client)*, *virtualization support set in BIOS*, and *at least 4 gb of RAM*.
+Basic installation requirements for Windows include *Windows 10 64-bit: Pro, Enterprise, or Education (Build 16299 or later)*, *64-bit processor with [SLAT](https://en.wikipedia.org/wiki/Second_Level_Address_Translation/) functionality*, *[Enabling Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v/)*, *[Enabling Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=Windows-10-Client/)*, *virtualization support set in BIOS*, and *at least 4 gb of RAM*.
 
 ### Windows - Get Started
 
 Docker Desktop also provides further documentation on [how to get started on Windows](https://docs.docker.com/docker-for-windows/) after installation, as well as a dedicated [troubleshooting page for Windows](https://docs.docker.com/docker-for-windows/troubleshoot/).
+
+In particular, enabling virtualization on Windows 10 can vary between editions and devices. Here are a few links that can help you get started if you're encountering this issue:
+
+* If you're using Windows 10 Pro, Education, or Enterprise, you can [enable virtualization using Hyper-V, as described here](https://docs.microsoft.com/en-gb/archive/blogs/canitpro/step-by-step-enabling-hyper-v-for-use-on-windows-10)
+* If you're using Windows 10 Home on an HP computer, [these instructions will work for you to enable virtualization](https://thewebspark.com/2019/04/02/how-to-enable-virtualization-in-bios-of-windows-10-home-hp-systems-solved/)
+* If you're using Windows 10 Home on another computer, you can adapt the virtualization-specific steps from the link above once you determine which keys you must press to enter BIOS on your computer, [using this guide based on hardware manufacturers](https://www.tomshardware.com/reviews/bios-keys-to-access-your-firmware,5732.html)
 
 ### Mac - Install
 
