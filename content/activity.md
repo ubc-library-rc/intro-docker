@@ -34,4 +34,5 @@ With guest contributor Clark Van Oyen from Countable Web Productions, we'll go t
 This should provide a better mental model of how containers are constructed from image files, and start you on the path towards writing your own Dockerfiles down the road!
 
 *Thanks to Clark and Countable for guidance on alllll the Docker things, while I constructed this workshop*
+<br>
 ![www.countable.ca](/figures/Countable_Logo.png)
