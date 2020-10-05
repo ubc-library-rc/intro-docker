@@ -19,7 +19,11 @@ Now, instead of learning all the low-level minutia of customizing containers in 
 
 * [application](https://en.wikipedia.org/wiki/Application_software) - the word "app" is widely used to mean many things, but overall it is any program or group of programs targeted towards computer end users
 
+* [binary code](https://en.wikipedia.org/wiki/Binary_code) - referred to in some contexts as [machine code](https://en.wikipedia.org/wiki/Machine_code), these are terms for the instructions sent at the computing level (the information is coded in literal 1s and 0s, hence the term 'binary')
+
 * [kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system)) - in a computer's operating system, the kernel is the central program that holds control over all the other programs, up to the level of applications which the user interacts with
+
+* [library](https://en.wikipedia.org/wiki/Library_(computing)) - this is the set of fixed resources a computer can call upon while executing programs and commands; it's reasonably parallel to an *actual library*, as it's where an active computer obtains things like documentation and sets of routines it can run
 
 * [operating system](https://en.wikipedia.org/wiki/Operating_system) - a computer's operating system is the software which manages the computing hardware and provides a platform for user-facing applications and services
 
@@ -52,7 +56,7 @@ Whereas a VM gives us virtualization all the way down to the kernel and hardware
 ![@b0rk on containers](figures/b0rkcontainer.png)
 Retrieved from the ["How Containers Work" zine](https://wizardzines.com/zines/containers/) produced by the awesome [Julia Evans, aka b0rk](https://jvns.ca/)
 
-Often called "OS-level virtualization," containers sit on top of the host computer's kernel and merely virtualize from the level of binaries and libraries up to the user interface. 
+Often called "OS-level virtualization," containers sit on top of the host computer's kernel and merely virtualize from the level of binaries and libraries up to the user interface (see "Computing concepts" above for binary and library definitions).
 
 ### Comparing VMs and Containers
 

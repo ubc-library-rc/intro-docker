@@ -3,7 +3,7 @@ layout: default
 title: Disambiguating Docker Terms
 permalink: /disambiguation/
 parent: Part 1 - What's Docker?
-nav_order: 2
+nav_order: 3
 ---
 
 # So many 'Dockers', so little time

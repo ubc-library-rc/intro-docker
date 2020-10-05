@@ -3,7 +3,7 @@ layout: default
 title: Main Use Cases
 permalink: /uses/
 parent: Part 1 - What's Docker?
-nav_order: 3
+nav_order: 2
 ---
 
 # What is Docker useful for?
