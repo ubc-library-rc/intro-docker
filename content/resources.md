@@ -3,7 +3,7 @@ layout: page
 title: Resources and next steps
 permalink: /resources/
 parent: Part 2 - Technical Overview
-nav_order: 3
+nav_order: 2
 ---
 
 # Resources 
