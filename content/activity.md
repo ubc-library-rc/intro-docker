@@ -8,10 +8,6 @@ nav_order: 3
 
 # Hands-on Learning Activities
 
-Even though mastering Docker can help you solve the many environment and dependency issues you'll come across in computing, getting Docker itself running on any given system can be quite a challenging task initially!
-
-First, we're going to check in on everyone's install status, to see how many folks will be "coding along" with us today.
-
 !["I have no idea what I'm doing" dog](/figures/dockerfile_activity.png)
 
 ### Dockerfiles Lifecycle
@@ -25,14 +21,12 @@ The main registry used by most people is [Docker Hub](http://hub.docker.com), wh
 Let's navigate together to the [Official Jekyll Docker Image](http://hub.docker.com/r/jekyll/jekyll/tags) to look into how these image's lifecycles are maintained, and how *tags* can specifically help us choose the best image for any given use case.
 <br/>
 
-### Creating a Dockerfile
+### Installing Docker/Q&A
 
-If we wanted to ensure that a Dockerfile never changed, then pulling one from a public registry would not work for our use case, as they are regularly updated.
+Even though mastering Docker can help you solve the many environment and dependency issues you'll come across in computing, getting Docker itself running on any given system can be quite a challenging task initially!
 
-With guest contributor Clark Van Oyen from Countable Web Productions, we'll go through the actual content of the Jekyll Dockerfile and what it executes when running on your computer. 
+First, we're going to check in on everyone's install status, to see who already has Docker installed. (No worries if you don't, it's not required- just gaining an understanding of our experience levels!)
 
-This should provide a better mental model of how containers are constructed from image files, and start you on the path towards writing your own Dockerfiles down the road!
+Next, if you're interested in getting started with your install *now*, we'll allot this time to step through [the first steps of installation, as designated here](install.md), and to answer any questions that arise when reviewing these instructions.
 
-*Thanks to Clark and Countable for guidance on alllll the Docker things, while I constructed this workshop*
-<br>
-![www.countable.ca](/figures/Countable_Logo.png)
+Additionally, [this thorough guide](https://www.ezzeddinabdullah.com/posts/penguins-in-docker-a-tutorial-on-why-we-use-docker) was just published yesterday, walking through the basics of Docker up to creating Dockerfiles from a data engineering perspective!
