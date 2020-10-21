@@ -23,13 +23,19 @@ Now, instead of learning all the low-level minutia of customizing containers in 
 
 * [kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system)) - in a computer's operating system, the kernel is the central program that holds control over all the other programs, up to the level of applications which the user interacts with
 
+* [instance](https://en.wikipedia.org/wiki/Instance_(computer_science)) - a single running version of something in computing or a concrete occurrence; when I create a container, that is a sole *instance* of that container type, and when I download and setup a piece of software, my local copy is an *instance* of the program
+
 * [library](https://en.wikipedia.org/wiki/Library_(computing)) - this is the set of fixed resources a computer can call upon while executing programs and commands; it's reasonably parallel to an *actual library*, as it's where an active computer obtains things like documentation and sets of routines it can run
 
 * [operating system](https://en.wikipedia.org/wiki/Operating_system) - a computer's operating system is the software which manages the computing hardware and provides a platform for user-facing applications and services
 
 * [process](https://en.wikipedia.org/wiki/Process_(computing)) - this is the term for the current instance of a running computer program
 
-* [repository](https://techterms.com/definition/repository#:~:text=Terms%20%3A%20Repository%20Definition-,Repository,a%20central%20file%20storage%20location.&text=This%20may%20include%20multiple%20source,new%20versions%20of%20the%20program.) - a repository is a central location for file storage; the 'central' element is crucial for maintaining version control
+* [provisioning](https://en.wikipedia.org/wiki/Provisioning_(telecommunications)) - in computing, this usually means "setting up/initializing/giving access;" in other words, preparing an environment or set of requirements for a planned computing activity
+
+* [registry](https://blogs.vmware.com/cloudnative/2017/06/21/what-is-a-container-registry/) - a central location for storing and accessing specific types of computing assets (in the case of Docker, we will be looking more at *container registries* later)
+
+* [repository](https://techterms.com/definition/repository#:~:text=Terms%20%3A%20Repository%20Definition-,Repository,a%20central%20file%20storage%20location.&text=This%20may%20include%20multiple%20source,new%20versions%20of%20the%20program.) - a central location for file storage; the 'central' element is crucial for maintaining version control
 
 * [version control](https://en.wikipedia.org/wiki/Version_control) - a component of technical collaboration in which we rigorously maintain a 'primary/live version' of a shared repository in order to make sure contributors' changes don't conflict
 

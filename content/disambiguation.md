@@ -52,6 +52,9 @@ Docker-Compose is the most frequently used tool across environments for more com
 
 Rather than a tool or platform, [Docker Swarm, or swarm mode](https://docs.docker.com/engine/swarm/), is exactly what it sounds like: central management of a cluster of Docker Engines controlled through Docker CLI.
 
+![Docker Swarm isn't that widely adopted](/figures/dockerswarm.png)
+
+
 ## Docker Platform Beyond Docker Variants
 
 The Docker platform also contains other crucial tooling, not all of which has the name "Docker" in it. One example is [Kubernetes](https://www.docker.com/products/kubernetes), an "orchestration platform" for coordinating shared infrastructure and operations around containers. 

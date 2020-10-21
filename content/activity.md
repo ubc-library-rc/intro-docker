@@ -8,7 +8,7 @@ nav_order: 3
 
 # Hands-on Learning Activities
 
-!["I have no idea what I'm doing" dog](/figures/dockerfile_activity.png)
+![Doing a Docker Install](/figures/dockerinstall.png)
 
 ### Dockerfiles Lifecycle
 

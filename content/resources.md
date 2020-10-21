@@ -32,6 +32,8 @@ If you'd like to get a better overview on containers in general, check out the [
 
 Additionally, [this click-through presentation on Docker](https://oer.gitlab.io/oer-on-oer-infrastructure/Docker.html#/slide-org562bf2f) is targeted to those with an interest in Open Educational Resources (OER).
 
+[This thorough guide](https://www.ezzeddinabdullah.com/posts/penguins-in-docker-a-tutorial-on-why-we-use-docker) was just published recently, walking through the basics of Docker up to creating Dockerfiles from a data engineering perspective!
+
 Finally, [this blog post](https://thekrishna.in/blogs/blog/fav-docker-images/) walks through 10 concrete use cases for Docker, linking out to relevant apps and images.
 
 ## Reproducible Computing in Academia
@@ -70,8 +72,6 @@ This workshop [uses concrete research data and methods from a study on MRSA](htt
 <br/>
 
 ## Docker Security
-
-![Gotta have security](/figures/dockerpanik.png)
 
 ### Videos
 
