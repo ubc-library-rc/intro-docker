@@ -21,6 +21,7 @@ The main registry used by most people is [Docker Hub](http://hub.docker.com), wh
 Let's navigate together to the [Official Jekyll Docker Image](http://hub.docker.com/r/jekyll/jekyll/tags) to look into how these image's lifecycles are maintained, and how *tags* can specifically help us choose the best image for any given use case.
 <br/>
 
+<!---
 ### Installing Docker/Q&A
 
 Even though mastering Docker can help you solve the many environment and dependency issues you'll come across in computing, getting Docker itself running on any given system can be quite a challenging task initially!
@@ -30,3 +31,4 @@ First, we're going to check in on everyone's install status, to see who already 
 Next, if you're interested in getting started with your install *now*, we'll allot this time to step through [the first steps of installation, as designated here](install.md), and to answer any questions that arise when reviewing these instructions.
 
 Additionally, [this thorough guide](https://www.ezzeddinabdullah.com/posts/penguins-in-docker-a-tutorial-on-why-we-use-docker) was just published yesterday, walking through the basics of Docker up to creating Dockerfiles from a data engineering perspective!
+--->
