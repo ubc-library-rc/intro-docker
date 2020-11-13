@@ -85,7 +85,7 @@ This workshop [uses concrete research data and methods from a study on MRSA](htt
 
 In particular, understanding how to determine whether to [trust Docker content](https://docs.docker.com/engine/security/trust/content_trust/) is important.
 
-Additionally, this security engineer posted [a deep dive blog post focused on protecting sensitive information in Docker images](https://www.ctl.io/developers/blog/post/tutorial-protecting-sensitive-info-docker).
+Additionally, this security engineer posted [a deep dive blog post](https://www.ctl.io/developers/blog/post/tutorial-protecting-sensitive-info-docker) focused on protecting sensitive information in Docker images.
 
 Keep in mind that Docker’s ecosystem is not immune to security concerns; [smaller registries may make operational security mistakes](https://threatpost.com/docker-registries-malware-data-theft/152734/), and even the most mainstream registry [Docker Hub reported a user data hack last year](https://threatpost.com/docker-hub-hack/144176/).
 <br/>
