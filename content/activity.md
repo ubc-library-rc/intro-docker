@@ -12,7 +12,7 @@ nav_order: 1
 
 ### Dockerfiles Lifecycle
 
-First we want to explore a bit more about the lifecycle of a Dockerfile.
+First we want to explore a bit more about the lifecycle of a Dockerfile. 
 
 In almost all use cases, you will not need to write a Dockerfile yourself, but can instead select one from a trusted Docker Registry.
 
