@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Learning activities
+title: Learning Activities
 permalink: /activity/
 parent: Part 2 - Technical Overview
-nav_order: 3
+nav_order: 1
 ---
 
 # Hands-on Learning Activities
@@ -20,6 +20,10 @@ The main registry used by most people is [Docker Hub](http://hub.docker.com), wh
 
 Let's navigate together to the [Official Jekyll Docker Image](http://hub.docker.com/r/jekyll/jekyll/tags) to look into how these image's lifecycles are maintained, and how *tags* can specifically help us choose the best image for any given use case.
 <br/>
+
+### Dockerhub Hands-On Activity
+
+*Optional*: If time allows, we can begin to progress to [this beginner-level activity on Docker Hub Playground](https://training.play-with-docker.com/beginner-linux/). You will need to register a DockerID in order to use the Docker Hub Playground site!
 
 <!---
 ### Installing Docker/Q&A

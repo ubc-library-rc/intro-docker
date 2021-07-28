@@ -3,7 +3,7 @@ layout: page
 title: Paths to installing Docker
 permalink: /install/
 parent: Part 2 - Technical Overview
-nav_order: 1
+nav_order: 2
 ---
 
 # Paths to installing Docker
