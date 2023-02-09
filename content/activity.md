@@ -3,7 +3,7 @@ layout: page
 title: Learning Activities
 permalink: /activity/
 parent: Part 2 - Technical Overview
-nav_order: 1
+nav_order: 2
 ---
 
 # Hands-on Learning Activities

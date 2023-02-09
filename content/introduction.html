@@ -1,0 +1,423 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<!-- Title of page (as it will appear in search results) -->
+<title>Intro to Docker</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reset.css">
+<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reveal.css">
+<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/ubc.css" id="theme">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/lib/css/monokai.css">
+
+<!-- Printing and PDF exports -->
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ubc-library-rc.github.io/reveal-ubc/css/print/pdf.css' : 'https://ubc-library-rc.github.io/reveal-ubc/css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+
+				<section>
+				<h3>Introduction to Docker</h3>
+				https://ubc-library-rc.github.io/intro-docker/
+				<aside class="notes">
+					<p>
+						This workshop is meant to introduce you to the set of virtualization tools referred to as Docker, which allow you to use, create, and share container images.
+						Containers create small reproducible computing workspaces on your computer, to which you can ascribe specific libraries and constraints to replicate specific environments.
+					</p>
+				</aside>
+				</section>
+
+				<section style="text-align: left;">
+					<h3>Land Acknowledgement</h3>
+					<p>UBC Vancouver is located on the traditional, ancestral, and unceded territory of the xʷməθkʷəy̓əm (Musqueam) peoples.</p>
+					<aside class="notes">
+						<p>
+						But before going into more details I would like to begin by acknowledging that I am fortunate to present this workshop in Burnaby which is the unceded territory of the Coast Salish People.
+						</p>
+					</aside>
+				</section>
+
+
+				<section>
+					Use the Zoom toolbar to engage
+					<img  data-src="figures/zoom_toolbar.png" alt="The Zoom toolbar">
+					<div class="fragment">
+						<p style="font-size: smaller"><em>Participants</em> window</p>
+						<img data-src="figures/participants_window_menu.png" alt="The participants menu">
+					</div>
+					<aside class="notes">
+						<p>
+						Active participation makes the session so much fun and gives me and your peers much more energy. We are
+						all sitting in our offices with little sound. Your voices and perspectives enlivens the session. We encourage
+						you to engage with each other and instructors.
+
+						The participants window lists everyone in the session and click the icons at the bottom to communicate with
+						the instructors.
+
+						You can also use the Chat windows to comment or ask questions at any time. It is also a good place to share
+						problems with your audio connection.
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<img width="500px" data-src="figures/open_annotate_toolbar.png" alt="annotate menu">
+					<div class="fragment" style="padding-top: 20px">
+						<img data-src="figures/annotate_toolbar.png" alt="annotation toolbar">
+					</div>
+					<aside class="notes">
+						<p>
+						For the next slide, use the annotation toolbar on the top of the screen.
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<div style="position: relative; float: left; width: 25%; font-size: smaller">
+						<p>I have never used virtual machines or virtual environments.</p>
+					</div>
+					<div style="position: relative; float: right; width: 25%; font-size: smaller">
+						<p>I use virtual machines, virtual environments, and containers in my workflow</p>
+					</div>
+					<div style="clear: both">
+						<hr/>
+					</div>
+					<aside class="notes">
+						<p>
+						We will start with an introduction to virtual computing. To get a better idea of your familiarity with the idea of virtualization, please answer to this question by
+						putting a mark on the spectrum somewhere between I have never used a virtual machine to using virtual machines and virtual environment is part of my workflow.
+						</p>
+					</aside>
+				</section>
+
+				<section data-background="#e6f7ff">
+					<h3>Learning Objectives</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Have an understanding of computational environments and Docker containers						</li>
+						<li class="fragment fade-in-then-semi-out">Identify Docker use cases and explain common terminology</li>
+						<li class="fragment fade-in-then-semi-out">Use existing Docker containers for common tasks</li>
+						<li class="fragment fade-in-then-semi-out">Get familiar with the process of building your own containers</li>
+					</ul>
+					<aside class="notes">
+						<p>
+							
+						</p>
+					</aside>
+				</section>
+
+				<section data-background="#e6f7ff">
+					<h3>Pre-workshop setup</h3>
+					<ul>
+						<li>Optional: Set up Docker on your system</li>
+					</ul>
+					<p>For more information, check out <a href="https://ubc-library-rc.github.io/intro-docker/install/">Docker Installation</a></p>
+					<aside class="notes">
+						<p>
+							During the workshop, we will explore some capabilities of Docker. To participate in the session and learn about
+							Docker capabilities, you do not need to install it on your system, but with this application installed, you can 
+							try them on your local machine.	
+						</p>
+					</aside>
+				</section>
+
+
+				<section data-background="#e6f7ff">
+					<h3>What is Docker?</h3>
+					<aside class="notes">
+						<p>
+						Docker itself is incredibly “young,” as it was first launched to the open source development community in 2013. However, containers pre-date Docker as a norm for isolating environments in Linux.
+
+						Now, with Docker, developers can make Docker containers for their applications and save a great amount of time setting up environments and checking dependencies.
+						
+						I mentioned a lot of words in the last two sentences which have specific meaning in the programming literature. Then, lets define some terms first:
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<p><b>Some Definitions</b></p>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Apps</li>
+						<li class="fragment fade-in-then-semi-out">Operating System</li>
+						<li class="fragment fade-in-then-semi-out">Process</li>
+						<li class="fragment fade-in-then-semi-out">Instance</li>
+						<li class="fragment fade-in-then-semi-out">Library</li>
+						<li class="fragment fade-in-then-semi-out">Virtualization</li>
+					</ul>
+					<aside class="notes">
+					the word “app” is widely used to mean many things, but overall it is any program or group of programs targeted towards computer end users, 
+					A running version of a program or application is called an instance. When you download and install a piece of software, your local copy is an instance of that program. It might be different
+					from another instance as it has its own configurations and data files.
+
+					Programs and tools need resources to execute our commands and some common ones are stored in units called libraries. It is reasonably parallel to an actual library. Libraries and application parameters or Settings
+					create an environment.
+					
+					one of the applications on your machine is
+					
+					a computer operating system which manages the computing hardware and provides a platform for user-facing applications and services
+					Within operating system has a central program that controls the other programs and is called the Kernel. Kernel is an interface between hardware and software.
+					</aside>
+				</section>
+				<section>
+					<img data-src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Kernel_Layout.svg">
+					<p>From <a href="https://upload.wikimedia.org/wikipedia/commons/8/8f/Kernel_Layout.svg">Wikimedia</a></p>
+					<aside class="notes">
+					the word “app” is widely used to mean many things, but overall it is any program or group of programs targeted towards computer end users, one of those applications is
+
+					a computer operating system which manages the computing hardware and provides a platform for user-facing applications and services
+					Within operating system has a central program that controls the other programs and is called the Kernel. Kernel also manages hardware.
+					
+					Each kernel has its own interface, that is why we cannot run windows applications on Linux. Under the hood, the applications are constantly 
+					talking to the kernel.
+
+					Some software capabilites are closely tied to hardware. Virtualization uses software to create a virtual representation of the hardware. When you install a virtual machine on your system, 
+					it behaves like an independent computer, even though it is running on just a portion of the actual underlying computer hardware. Virtualization enables more efficient utilization of physical computer
+					hardware and is the foundation of cloud computing.
+					</aside>
+				</section>
+				<section>
+					<h3>Benefits of Virtualization</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Using resources efficiently</li>
+						<li class="fragment fade-in-then-semi-out">Easier management of resources</li>
+						<li class="fragment fade-in-then-semi-out">Minimal downtime</li>
+					</ul>
+					<aside class="notes">
+						- Before virtualization, each application server required its own dedicated physical CPU.Invariably, each physical server would be underused. In contrast, server virtualization lets you run several applications—each on its own VM with its own OS—on a single physical computer
+					
+						- Replacing physical computers with software-defined VMs makes it easier to use and manage policies written in software. This means that you can build perfectly replicated machines and install applications repeatedly and consistently without cumbersome, time-consuming. and error-prone manual setup.
+
+						- With Virtual Machines, you can run even run redundant environments to minimize downtime. 
+
+						Virtual machines were first developed in the 1960s, to enable “time sharing” of computing hardware resources for multiple simultaneous users.
+
+						The real computer which the VM is running on is often called the host, and the software running on it which creates virtual machines is called a hypervisor.
+					</aside>
+
+				</section>
+
+				<section>
+					<h3>Then, what are containers?</h3>
+					<img data-src="https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png">
+					<p>From <a href="https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png">Netapp</a></p>
+					<aside class="notes">
+						Now that we got the idea behind virtual machines, what is the difference between virtual machines and containers?Whereas a VM gives us virtualization all the way down to the kernel and hardware layers, a container is much more lightweight in comparison. Virtual Machines are a lot more resource-intensive than containers but can be necessary for certain computing tasks.
+
+					</aside>
+				</section>
+
+				<section>
+					<h3>Benfits of containers?</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Lightweight but less fault tolerant</li>
+						<li class="fragment fade-in-then-semi-out">Lower overhead</li>
+						<li class="fragment fade-in-then-semi-out">Less security</li>
+					</ul>
+					<aside class="notes">
+						Some of the benefits of containers over VMs: containers are more lightweight on computing resources, more portable between environments, and have lower management overhead as they run over top of the existing operating system.
+					
+						On the negative side, containers are slightly less fault tolerant than virtual machines in some computing use cases, provide slightly less security via isolation, and are obviously not the right choice in instances where special OS or hardware configurations need to be specified.
+					</aside>
+				</section>
+
+				<section>
+					<h3>More Terms and Definitions</h3>
+
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Resource allocation</li>
+						<li class="fragment fade-in-then-semi-out">Isolation</li>
+						<li class="fragment fade-in-then-semi-out">Layering</li>
+					</ul>
+					<aside class="notes">
+						We want to talk about a few use cases of Docker in the next section, but before that, lets talk about a few broader principles that
+						apply to both virtual machines and containers:
+
+						Processes on your system are working alongside each other. Cloud servers handle lots of processes in miliseconds, but
+						How do we ensure computing processes have access to the resources they need? Resource allocation is very important in that regard
+
+						When processes are running on the same kernel, how do we protect our computing environments from security risks when introducing new computer processes, as well as protecting them from the negative impact of bugs? By running processes in isolation, 
+						we can minimize their impact on each other.
+
+						Also, by layering processes and give special permissions to each layer, permissions are restricted to lower-level systems layers, preventing containerized processes from touching the operating system.
+						That is why containers are good choices for sandbox projects
+					</aside>
+				</section>
+
+				<section>
+					<h3>Docker's impact</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">things just work</li>
+						<li class="fragment fade-in-then-semi-out">no more struggling with dependencies</li>
+						<li class="fragment fade-in-then-semi-out">enables reproducible computing</li>
+					</ul>
+					<aside class="notes">
+						Generally, there are three reasons for processes not running properly on our system:
+						1. One or more files Missing
+						2. the libraries and other dependencies does not match the version installed on the machine
+						3. environment variables are different between machines
+
+						Docker keeps the process of interacting with applications consistent
+						 and as all libraries, packages, and dependencies should be included with the Docker blueprint, so the piece of software will work right out of the box for its recipient
+						and finally when sharing software, research, or other data, you can provide a Docker image to ensure your recipients do not have to scramble to duplicate the development environment in which it can work most optimally. Additionally, when others create containers from your Docker image, any actions they take within that container will not alter the original Docker image for others.
+					</aside>
+				</section>
+
+
+				<section>
+					<img data-src="https://i0.wp.com/cdn-images-1.medium.com/max/1600/1*bIQOZL_pZujjrfaaYlQ_gQ.png?w=810&ssl=1">
+					<p>From <a href="https://blog.knoldus.com/docker-components/">knoldus</a></p>
+					<aside class="notes">
+						Now that we learned the reason for Dockers existence, let dive deeper into the Docker ecosystem and learn about some of the terms used there.
+
+						Docker Engine can be thought of, appropriately enough, as the “engine” upon which Docker images and their resulting containers are run. The engine has three main subcomponents:
+						docker daemon or dockerd is the process that handles the communications with the kernel and the client
+						Docker CLI is the command line interface. Docker Engine has an Application Programming Interface, in shortened form API
+						Our next step is to check out the command line interface and run a docker container
+						You do not need to install Docker on your system for this workshop, but lets talk a little bit about Docker installation
+					</aside>
+				</section>
+
+				<section>
+					<h3>Paths to Installing Docker</h3>
+					<p>Docker Engine is available through Docker Desktop.</p>
+					<ul>
+						<li class="fragment fade-in-then-semi-out"><a href="https://docs.docker.com/desktop/install/linux-install/">Install on Linux</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://docs.docker.com/desktop/install/mac-install/">Install on Mac</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://docs.docker.com/desktop/install/windows-install/">Install on Windows</a></li>
+					</ul>
+					<aside class="notes">
+						Read the installation guide
+					</aside>
+				</section>
+
+				<section>
+					<h3>Docker Hub's Playground</h3>
+					<p> <a href="https://labs.play-with-docker.com/">https://labs.play-with-docker.com/</a></p>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>A simple activity</h3>
+					<img data-src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w203qkq2umde2wgc0uej.png">
+					<p>From <a href="https://dev.to/pavanbelagatti/dockerfile-best-practices-for-developers-mh2">DEV</a></p>
+					
+					<aside class="notes">
+						To start our activity, we need to know a little bit more about Docker workflow:
+
+						The instructions for making a Docker Container is contained in a Docker image.
+						Docker-images are templates used to build containers. Images also contain metadata that describe the containers capabilities and needs.
+						By running docker build, the docker daemon creates an image based on the instructions in the Dockerfile.
+						By running docker build, docker daemon uses the image to make an instance of the environment.
+
+						We can make as many instances of an image as we want.
+
+						docker version
+
+						docker run hello-world
+						docker image pull ubuntu
+						docker image ls
+						docker container run alpine ls -l
+
+						docker container run ubuntu echo "hello from ubuntu"
+
+						docker container run -it alpine /bin/sh
+
+						docker image
+						docker build 
+
+						typically we start with a base image
+					</aside>
+				</section>
+
+				<section>
+					<h3>Docker Hub</h3>
+					
+					<aside class="notes">
+						We can find many readily available base images in the Docker Hub. 
+						Once we upload an image on the docker hub, we can use it on any machine with the docker daemon installed.
+					</aside>
+				</section>
+
+				<section>
+					<h3>Dockerfile</h3>
+					
+					<aside class="notes">
+						docker build -t hello_world .
+
+						docker run -it hello_world bash
+
+						docker ps -a
+
+						docker rm -f f9fd388c24b4
+					</aside>
+				</section>
+
+				<section>
+					<h3>Resources and next steps</h3>
+					
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+					<h3>Key Takeaways</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Any software depends on other software pieces to function, but each component evolves in its own time frame.</li>
+						<li class="fragment fade-in-then-semi-out">Docker containers are small environments that contain the components needed for a given task</li>
+						<li class="fragment fade-in-then-semi-out">Containers are easy to maintain, reproducible, and allow efficient management of hardware resources. </li>
+						<li class="fragment fade-in-then-semi-out">Containers are built from a set of instructions and Docker is only one tool for building containers. </li>
+					</ul>
+					<aside class="notes">
+						This links your local Git repository to a remote one. The link indicates the location of the remote repository, which is nicknamed origin in this example. The nickname can be anything but Git convention is to refer to the remote repository as “origin”.
+
+						We can confirm that it is set up correctly with this command:
+					</aside>
+				</section>
+					
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+
+		
+	</body>
+</html>

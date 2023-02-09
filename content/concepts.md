@@ -62,11 +62,12 @@ Whereas a VM gives us virtualization all the way down to the kernel and hardware
 ![@b0rk on containers](figures/b0rkcontainer.png)
 Retrieved from the ["How Containers Work" zine](https://wizardzines.com/zines/containers/) produced by the awesome [Julia Evans, aka b0rk](https://jvns.ca/)
 
-Often called "OS-level virtualization," containers sit on top of the host computer's kernel and merely virtualize from the level of binaries and libraries up to the user interface (see "Computing concepts" above for binary and library definitions).
+Often called "OS-level virtualization," containers sit on top of the host computer's kernel and merely virtualize from the level of binaries and libraries up to the user interface (see "Computing concepts" above for binary and library definitions). Just like shipping containers, Docker containers kare built to keep software and its dependencies together and ship them with ease. 
+
 
 ### Comparing VMs and Containers
 
-Virtual machines virtualize the entire "tech stack" of a computer down to the hardware. They're a lot more resource-intensive than containers but can be necessary for certain computing tasks. 
+Virtual machines virtualize the entire "tech stack" of a computer down to the hardware. They're a lot more resource-intensive than containers but can be necessary for certain computing tasks. Unlike containers, virtual machines typically contain a whole copy of the operating system and has to get booted up. 
 
 ![Containers versus VMs](figures/containersvsvm.png)
 Diagram by Chelsea Palmer, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)

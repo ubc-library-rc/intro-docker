@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 2
+nav_order: 3
 title: Participating online
 has_children: false
 has_toc: false

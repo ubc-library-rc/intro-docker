@@ -12,9 +12,14 @@ One of the first barriers in learning Docker is identifying all the elements of 
 
 ![What's Docker meme](/figures/whatsdocker.png)
 
+Docker operates using a client-server setup, where the Docker client can connect to the Docker host either locally or remotely. Both the Docker client and host (daemon) can reside on the same machine, or they can be on separate systems and communicate through sockets or a REST API.
+
+The **Docker client** serves as the primary means of interaction for many Docker users. By issuing commands such as "docker run", the client sends instructions to the **Docker daemon** which then executes them. The **Docker API** is used by the Docker command (CLI). It is possible for the Docker client to connect with multiple daemons simultaneously
+
 ## Docker Engine
 
 [Docker Engine](https://www.docker.com/products/container-runtime) can be thought of, appropriately enough, as the "engine" upon which Docker images and their resulting containers are run. 
+
 
 Built on [containerd](https://containerd.io/) and robustly interoperable across systems, this is the "main event" of Docker, with three main subcomponents:
 
