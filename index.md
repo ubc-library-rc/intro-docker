@@ -23,7 +23,7 @@ Finally we'll undertake some [group learning activities](/content/activity.md) t
 
 ### Prerequisites
 
-- As we settle in to begin the workshop, please review the [Participating Online page](/content/participating-online.md) for the norms which will guide this session.
+- As we settle in to begin the workshop, please review the [Participating Online page](/participating-online.md) for the norms which will guide this session.
 
 - *Optional*: [Set up Docker on your computer](/content/install.md) so you have a reference point during the group learning activities. **You will be able to follow along without having Docker installed locally.**
 - Some familiarity with computer science concepts and command shell will be helpful, but feel free to ask for clarification when you're not familiar with something mentioned in the session.
