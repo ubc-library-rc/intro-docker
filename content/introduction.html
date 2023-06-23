@@ -160,7 +160,7 @@
 					<p><b>Some Definitions</b></p>
 					<ul>
 						<li class="fragment fade-in-then-semi-out">Apps</li>
-						<li class="fragment fade-in-then-semi-out">Operating System</li>
+						<li class="fragment fade-in-then-semi-out">Operating System\Kernel</li>
 						<li class="fragment fade-in-then-semi-out">Process</li>
 						<li class="fragment fade-in-then-semi-out">Instance</li>
 						<li class="fragment fade-in-then-semi-out">Library</li>
@@ -197,6 +197,17 @@
 					hardware and is the foundation of cloud computing.
 					</aside>
 				</section>
+
+				<section>
+					<h3>Then, what are containers?</h3>
+					<img data-src="https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png">
+					<p>From <a href="https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png">Netapp</a></p>
+					<aside class="notes">
+						Now that we got the idea behind virtual machines, what is the difference between virtual machines and containers?Whereas a VM gives us virtualization all the way down to the kernel and hardware layers, a container is much more lightweight in comparison. Virtual Machines are a lot more resource-intensive than containers but can be necessary for certain computing tasks.
+
+					</aside>
+				</section>
+
 				<section>
 					<h3>Benefits of Virtualization</h3>
 					<ul>
@@ -219,30 +230,6 @@
 				</section>
 
 				<section>
-					<h3>Then, what are containers?</h3>
-					<img data-src="https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png">
-					<p>From <a href="https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png">Netapp</a></p>
-					<aside class="notes">
-						Now that we got the idea behind virtual machines, what is the difference between virtual machines and containers?Whereas a VM gives us virtualization all the way down to the kernel and hardware layers, a container is much more lightweight in comparison. Virtual Machines are a lot more resource-intensive than containers but can be necessary for certain computing tasks.
-
-					</aside>
-				</section>
-
-				<section>
-					<h3>Benfits of containers?</h3>
-					<ul>
-						<li class="fragment fade-in-then-semi-out">Lightweight but less fault tolerant</li>
-						<li class="fragment fade-in-then-semi-out">Lower overhead</li>
-						<li class="fragment fade-in-then-semi-out">Less security</li>
-					</ul>
-					<aside class="notes">
-						Some of the benefits of containers over VMs: containers are more lightweight on computing resources, more portable between environments, and have lower management overhead as they run over top of the existing operating system.
-					
-						On the negative side, containers are slightly less fault tolerant than virtual machines in some computing use cases, provide slightly less security via isolation, and are obviously not the right choice in instances where special OS or hardware configurations need to be specified.
-					</aside>
-				</section>
-
-				<section>
 					<h3>More Terms and Definitions</h3>
 
 					<ul>
@@ -262,6 +249,20 @@
 
 						Also, by layering processes and give special permissions to each layer, permissions are restricted to lower-level systems layers, preventing containerized processes from touching the operating system.
 						That is why containers are good choices for sandbox projects
+					</aside>
+				</section>
+
+				<section>
+					<h3>Benfits of containers?</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Lightweight but less fault tolerant</li>
+						<li class="fragment fade-in-then-semi-out">Lower overhead</li>
+						<li class="fragment fade-in-then-semi-out">Less security</li>
+					</ul>
+					<aside class="notes">
+						Some of the benefits of containers over VMs: containers are more lightweight on computing resources, more portable between environments, and have lower management overhead as they run over top of the existing operating system.
+					
+						On the negative side, containers are slightly less fault tolerant than virtual machines in some computing use cases, provide slightly less security via isolation, and are obviously not the right choice in instances where special OS or hardware configurations need to be specified.
 					</aside>
 				</section>
 

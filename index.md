@@ -21,7 +21,7 @@ Then,  we'll walk through an overview of installation pathways for different ope
 
 Finally we'll undertake some [group learning activities](/content/activity.md) to explore the nuts and bolts of Docker without getting bogged down in the install process.
 
-#### Prerequisites
+### Prerequisites
 
 - As we settle in to begin the workshop, please review the [Participating Online page](/content/participating-online.md) for the norms which will guide this session.
 

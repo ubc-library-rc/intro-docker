@@ -14,14 +14,14 @@ Microphones are muted by default to improve audio quality and recording is disab
 
 The Zoom toolbar provides several ways to be part of the conversation:
 
-<img src="figures/zoom_toolbar.png" alt="Zoom toolbar" width="510"/>
+<img src="content/figures/zoom_toolbar.png" alt="Zoom toolbar" width="510"/>
 <br/>
 
 ## Participants Window
 
 The _Participants_ window lists everyone in the session. Click the icons at the bottom of the window to communicate with the instructors.
 
-![Menu at bottom of participants window](figures/participants_window_menu.png)
+![Menu at bottom of participants window](content/figures/participants_window_menu.png)
 
 Clicking an icon makes it appear next to your name in the participants list. Use this to **answer yes/no** questions or to **raise your hand** when instructors invite you to ask a question, comment, or share your screen.
 <br/>

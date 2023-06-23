@@ -95,3 +95,9 @@ Across both virtual machines and containers, a few broader principles apply:
 2. The problem of **isolation** - how do we protect our computing environments from security risks when introducing new computer processes, as well as protecting them from the negative impact of bugs?
 
 3. The strategy of **layering** which we see in action in the first "VMs versus Containers" diagram above: permissions are restricted to lower-level systems layers, preventing containerized processes from touching the operating system.
+
+## Granularity and Reproducibility
+
+Granularity in containers allows for fine-grained control over resource allocation and isolation. It enables administrators and developers to allocate specific amounts of resources to different components within a container, ensuring optimal performance and isolation. It relates to the degree of control and separation that can be applied to different aspects of the container, such as CPU, memory, network, and file system. By adjusting the granularity settings, containerization platforms such as Docker provide flexibility in managing and optimizing resource allocation for different components within containers. This level of control helps in achieving efficient resource utilization, isolation between containers, and effective scaling of containerized applications.
+
+Docker allows applications and their dependencies to be packaged into self-contained containers. Also, Docker images are immutable, meaning they are read-only and cannot be modified once created. Docker's containerization approach and immutable images contribute to achieving reproducibility in software development and deployment.
