@@ -45,7 +45,7 @@ This section will introduce a few concepts and terms for you to be aware of befo
 
 [Virtualization](https://en.wikipedia.org/wiki/Virtualization) refers to anytime you create a purely virtual version of something.
 
-![Virtualization meme](/figures/VIRTUALIZATION.png)
+![Virtualization meme](/content/figures/VIRTUALIZATION.png)
 
 ### Virtual machines (VMs)
 
@@ -59,7 +59,7 @@ The real computer which the VM is running on is often called the 'host,' and the
 
 Whereas a VM gives us virtualization all the way down to the kernel and hardware layers, a [container](https://en.wikipedia.org/wiki/OS-level_virtualization) is much more lightweight in comparison. 
 
-![@b0rk on containers](figures/b0rkcontainer.png)
+![@b0rk on containers](/content/figures/b0rkcontainer.png)
 Retrieved from the ["How Containers Work" zine](https://wizardzines.com/zines/containers/) produced by the awesome [Julia Evans, aka b0rk](https://jvns.ca/)
 
 Often called "OS-level virtualization," containers sit on top of the host computer's kernel and merely virtualize from the level of binaries and libraries up to the user interface (see "Computing concepts" above for binary and library definitions). Just like shipping containers, Docker containers kare built to keep software and its dependencies together and ship them with ease. 
@@ -69,14 +69,14 @@ Often called "OS-level virtualization," containers sit on top of the host comput
 
 Virtual machines virtualize the entire "tech stack" of a computer down to the hardware. They're a lot more resource-intensive than containers but can be necessary for certain computing tasks. Unlike containers, virtual machines typically contain a whole copy of the operating system and has to get booted up. 
 
-![Containers versus VMs](figures/containersvsvm.png)
+![Containers versus VMs](/content/figures/containersvsvm.png)
 Diagram by Chelsea Palmer, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Some of the benefits of containers over VMs: containers are more **lightweight** on computing resources, more **portable** between environments, and have **lower management overhead** as they run over top of the existing operating system.
 
 On the negative side, containers are slightly **less fault tolerant** than virtual machines in some computing use cases, provide slightly **less security via isolation**, and are obviously not the right choice in instances where special OS or hardware configurations need to be specified.
 
-![Containers versus VMs part 2](figures/wikicommonsVMcontainer.png)
+![Containers versus VMs part 2](/content/figures/wikicommonsVMcontainer.png)
 Another way to model containers vs. VMs, retrieved from [Natlibfi-arlehiko on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Containers.png), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ### Docker objects

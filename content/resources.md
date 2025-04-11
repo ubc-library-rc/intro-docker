@@ -3,7 +3,7 @@ layout: page
 title: Resources and next steps
 permalink: /resources/
 parent: Part 2 - Technical Overview
-nav_order: 3
+nav_order: 3.5
 ---
 
 # Resources 
@@ -26,7 +26,7 @@ Once you've got Docker installed on your operating system, [this Docker Labs beg
 
 ### Documentation
 
-![Cover of Julia Evans' zine on Linux containers](figures/b0rkcover.png)
+![Cover of Julia Evans' zine on Linux containers](/content/figures/b0rkcover.png)
 If you'd like to get a better overview on containers in general, check out the ["How Containers Work" zine](https://wizardzines.com/zines/containers/) produced by the awesome [Julia Evans, aka b0rk](https://jvns.ca/)
 <br/>
 

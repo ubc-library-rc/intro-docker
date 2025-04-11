@@ -8,7 +8,7 @@ nav_order: 3
 
 # Hands-on Learning Activities
 
-![Doing a Docker Install](/figures/dockerinstall.png)
+![Doing a Docker Install](/content/figures/dockerinstall.png)
 
 ### Dockerfiles Lifecycle
 

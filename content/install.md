@@ -16,7 +16,7 @@ The Docker documentation guide gives [instructions for installation on multiple 
 
 If you're an experienced Linux user on a unique distro not included above, there are also instructions to [Install Docker Engine from binaries](https://docs.docker.com/engine/install/binaries/).
 
-![Docker whale made with lego](figures/docker_lego.jpg)
+![Docker whale made with lego](/content/figures/docker_lego.jpg)
 Docker lego whale retrieved from [kyohei ito on Flickr](https://www.flickr.com/photos/134416355@N07/31518965950), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 
 ## Windows and Mac
