@@ -1,6 +1,7 @@
-# intro-docker
+# Introduction to Docker
  ### UBC Library Research Commons
-Research Commons workshop "Intro to Docker"
+
+Description: Introduces the set of virtualization tools referred to as Docker, to create and share small reproducible computing environments.
 
  Link to workshop: https://ubc-library-rc.github.io/intro-docker/
 
